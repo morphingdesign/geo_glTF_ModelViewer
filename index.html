@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Hans Palacios">
+    <title>Geo Sandbox</title>
+
+    <link rel="canonical" href="https://www.morphingdesign.com">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="css/modelviewer.css" rel="stylesheet" >
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Sandbox</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Burrito</h1>
+        <p class="lead">This is an exploration of .glb file formats for web applications.</p>
+        <p class="lead">
+
+        </p>
+    </main>
+    <div class="mx-auto flex-column" style="width: 400px; height: 400px;">
+        <model-viewer style="width: 400px; height: 400px;" src="geo/donkey.glb" camera-orbit="-761.5deg 76.35deg 1.503m" field-of-view="45deg" camera-controls auto-rotate="" min-field-of-view="auto" max-field-of-view="auto" poster="Change this to your poster URL" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto">
+        <button class="Hotspot" slot="hotspot-1" data-position="-0.026874751276155684m 0.35298411406902863m 0.3450450613919619m" data-normal="-0.13329565711346034m 0.9146669036678602m 0.38159759319123104m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Hi, my name is Burrito</div>
+        </button><button class="Hotspot" slot="hotspot-2" data-position="-0.02530474634079627m -0.08962799937582003m -0.43732463856765413m" data-normal="-0.8336454141429296m 0.257991531055162m -0.4883397315212811m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">This is my tail</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.0028047817162655253m 0.291804000257541m 0.08926059769838246m" data-normal="0.010548323261874309m 0.5107919360243803m -0.8596396518127979m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">I shaved my mohawk</div>
+    </button>
+    </model-viewer>
+        <style>
+        .Hotspot {
+            background: #fff;
+            border-radius: 32px;
+            border: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            box-sizing: border-box;
+            cursor: pointer;
+            height: 24px;
+            padding: 8px;
+            position: relative;
+            transition: opacity 0.3s;
+            width: 24px;
+        }
+
+        .Hotspot:not([data-visible]) {
+            background: transparent;
+            border: 4px solid #fff;
+            box-shadow: none;
+            height: 32px;
+            pointer-events: none;
+            width: 32px;
+        }
+
+        .Hotspot:focus {
+            border: 4px solid rgb(0, 128, 200);
+            height: 32px;
+            outline: none;
+            width: 32px;
+        }
+
+        .Hotspot>* {
+            opacity: 1;
+            transform: translateY(-50%);
+        }
+
+        .HotspotAnnotation {
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            color: rgba(0, 0, 0, 0.8);
+            display: block;
+            font-family: Futura, Helvetica Neue, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            left: calc(100% + 1em);
+            max-width: 128px;
+            padding: 0.5em 1em;
+            position: absolute;
+            top: 50%;
+            width: max-content;
+        }
+
+        .Hotspot:not([data-visible])>* {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(calc(-50% + 4px));
+            transition: transform 0.3s, opacity 0.3s;
+        }
+    </style>
+    </div>
+
+
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Hans Palacios</p>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
