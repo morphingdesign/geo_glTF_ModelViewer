@@ -3,7 +3,7 @@
     display: block;
     position: relative;
     contain: strict;
-    width: 300px;
+    width: 100%;
     height: 150px;
 }
 
