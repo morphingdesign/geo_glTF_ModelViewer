@@ -93,6 +93,8 @@
                 const time = performance.now();
                 let angle = 0;
 
+                // Oscillate function source:
+                // https://stackoverflow.com/questions/35530021/oscillation-function
                 function oscillate(obj, target, radius, speed) {
                     obj.x = target.x + Math.cos(angle) * radius;
                     obj.y = target.y + Math.sin(angle) * radius;
